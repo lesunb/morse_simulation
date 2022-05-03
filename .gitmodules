@@ -4,9 +4,6 @@
 [submodule "docker/motion_ctrl"]
 	path = docker/motion_ctrl
 	url = https://github.com/Gastd/motion_ctrl/
-[submodule "docker/turtlebot3_hospital_sim"]
-	path = docker/turtlebot3_hospital_sim
-	url = https://github.com/Gastd/turtlebot3_hospital_sim
 [submodule "docker/multimaster_fkie"]
 	path = docker/multimaster_fkie
 	url = https://github.com/fkie/multimaster_fkie
