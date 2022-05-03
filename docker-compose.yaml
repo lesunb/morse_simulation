@@ -19,7 +19,7 @@ services:
       - "ROS_MASTER_URI=http://master:11311"
       - "QT_X11_NO_MITSHM=1"
       - "DISPLAY=$DISPLAY"
-      - "XAUTHORITY=$XAUTH"
+      - "XAUTHORITY=$XAUTHORITY"
       - "QT_GRAPHICSSYSTEM=native"
       - "PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native"
     volumes:
@@ -99,7 +99,7 @@ services:
     depends_on:
     - master
     env_file:
-    - /home/gastd/git/morse_simulation/sim.env
+    - $PWD/sim.env
     environment:
     - ROS_HOSTNAME=motion_ctrl
     - ROS_MASTER_URI=http://master:11311
@@ -226,7 +226,7 @@ services:
     depends_on:
     - motion_ctrl
     env_file:
-    - /home/gastd/git/morse_simulation/sim.env
+    - $PWD/sim.env
     environment:
     - ROS_HOSTNAME=pytree_test1
     - ROS_MASTER_URI=http://master:11311
@@ -277,7 +277,7 @@ services:
       - "ROS_MASTER_URI=http://master:11311"
       - "QT_X11_NO_MITSHM=1"
       - "DISPLAY=$DISPLAY"
-      - "XAUTHORITY=$XAUTH"
+      - "XAUTHORITY=$XAUTHORITY"
       - "QT_GRAPHICSSYSTEM=native"
       - "PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native"
       - "ROBOT_NAME=turtlebot1"

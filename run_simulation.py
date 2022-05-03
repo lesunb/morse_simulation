@@ -659,4 +659,4 @@ if __name__ == '__main__':
     trials_runner.prepare_environment()
     # trials_runner.run_simulation()
     # trials_runner.run_some_simulations([9, 17, 34, 63, 73, 75])
-    # trials_runner.run_all_simulations()
+    trials_runner.run_all_simulations()
